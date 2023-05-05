@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trần Công Tiến</title>
+    <link rel="shortcut icon" href="./assets/images/logo.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <main>
+        <aside class="sidebar" data-sidebar>
+            <div class="sidebar-info">
+                <figure class="avatar-box">
+                    <img src="./assets/images/my-avatar.jpg" alt="Trần Công Tiến" width="80" />
+                </figure>
+
+                <div class="info-content">
+                    <h1 class="name" title="Trần Công Tiến">Trần Công Tiến</h1>
+
+                    <div style="display: flex; position: absolute">
+                        <h5 class="title" style="padding-right: 10px">Web developer</h5>
+                        <a download href="./assets/images/Web_CV.png" class="title" style="
+                  position: absolute;
+                  top: 50%;
+                  left: 128%;
+                  transform: translate(-50%, -50%);
+                ">
+                            CV</a>
+                    </div>
+                </div>
+
+                <button class="info_more-btn" data-sidebar-btn>
+                    <span>Show Contacts</span>
+
+                    <ion-icon name="chevron-down"></ion-icon>
+                </button>
+            </div>
+
+            <div class="sidebar-info_more">
+                <div class="separator"></div>
+
+                <ul class="contacts-list">
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
+
+                            <a href="mailto:trancongtien406 @gmail.com" class="contact-link">trancongtien406<br />
+                                @gmail.com</a>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="phone-portrait-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Phone</p>
+
+                            <a href="tel:+84382802406" class="contact-link">+84 382 802 406</a>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="calendar-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Birthday</p>
+
+                            <time datetime="04-06-2003">June 4, 2003</time>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Location</p>
+
+                            <address>Ngu Hanh Son, Da Nang</address>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="separator"></div>
+
+                <ul class="social-list">
+                    <li class="social-item">
+                        <a href="https://www.facebook.com/tctien.2k3" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li class="social-item">
+                        <a href="https://github.com/changkhobanhoa" class="social-link">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li class="social-item">
+                        <a href="" class="social-link">
+                            <ion-icon name="logo-google"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!--
+      - #main-content
+    -->
+
+        <div class="main-content">
+            <!--
+        - #NAVBAR
+      -->
+
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item" id="about">
+                        <a href="#about">
+                            <button class="navbar-link active" data-nav-link>About</button>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item" id="resume">
+                        <a href="#resume">
+                            <button class="navbar-link" data-nav-link>Resume</button>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item" id="portfolio">
+                        <a href="#portfolio"></a>
+                        <button class="navbar-link" data-nav-link>Portfolio</button>
+                    </li>
+
+                    <li class="navbar-item" id="blog">
+                        <a href="#blog">
+                            <button class="navbar-link" data-nav-link>Blog</button>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item" id="contact">
+                        <a href="#contact">
+                            <button class="navbar-link" data-nav-link>Contact</button></a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!--
+        - #ABOUT
+      -->
+
+            <article class="about active" data-page="about">
+                <header>
+                    <h2 class="h2 article-title">About me</h2>
+                </header>
+
+                <section class="about-text">
+                    <h3 class="service-item-text">
+                        I'm second-year student from VKU University, working in web
+                        development and mobile app I enjoy turning complex problems into
+                        simple, beautiful and intuitive designs.
+                    </h3>
+                    <br>
+                    <h3 class="service-item-text">
+                        My job is to build your website so that it is functional and
+                        user-friendly but at the same time attractive. Moreover, I add
+                        personal touch to your product and make sure that is eye-catching
+                        and easy to use. My aim is to bring across your message and
+                        identity in the most creative way.
+                    </h3>
+                </section>
+
+                <!--
+          - service
+        -->
+
+                <section class="service">
+                    <h3 class="h3 service-title">What i'm doing</h3>
+
+                    <ul class="service-list">
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40" />
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Frontend Web</h4>
+
+                                <p class="service-item-text">
+                                    The most modern and high-quality design made at a
+                                    professional level.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40" />
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Backend Web</h4>
+
+                                <p class="service-item-text">
+                                    I'm trying call API.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40" />
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                                <p class="service-item-text">
+                                    Professional development of applications for
+                                    Android.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40" />
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Java Swing</h4>
+
+                                <p class="service-item-text">
+                                    I make high-quality photos of any category at a professional
+                                    level.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+
+            </article>
+
+            <!--
+        - #RESUME
+      -->
+
+            <article class="resume" data-page="resume">
+                <header>
+                    <h2 class="h2 article-title">Resume</h2>
+                </header>
+
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box">
+                            <ion-icon name="book-outline"></ion-icon>
+                        </div>
+
+                        <h3 class="h3">Education</h3>
+                    </div>
+
+                    <ol class="timeline-list">
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">
+                                Vietnam-Korea University of Information and Communication
+                                Technology
+                            </h4>
+
+                            <span>2021 — Now</span>
+
+                            <p class="timeline-text">I'm stying Software Engineer</p>
+                        </li>
+
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">High school Gio Linh</h4>
+
+                            <span>2018 — 2021</span>
+
+                            <p class="timeline-text">
+                                I had a good time there, and in grades 10 and 11, I was an good student, while in grade
+                                12, I was a not good student
+                            </p>
+                        </li>
+                    </ol>
+                </section>
+
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box">
+                            <ion-icon name="book-outline"></ion-icon>
+                        </div>
+
+                        <h3 class="h3">Experience</h3>
+                    </div>
+
+                    <ol class="timeline-list">
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Customer Service Specialist - Shinhan Finance</h4>
+
+                            <span>2/2023 — 3/2023</span>
+
+                            <p class="timeline-text">
+                                I have searched for customers and consulted with them to borrow money from our bank.
+                                I am doing this job because I want to gain more experience for my life.
+                            </p>
+                        </li>
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Frontend Dev - PARACEL PROJECT EDUCATION SOFTWARE COMPANY
+                                LIMITED </h4>
+
+                            <span>12/2022 — 1/2023</span>
+
+                            <p class="timeline-text">
+                                I make frontend using Reactjs+ antd+tailwindcss for project.
+                                <br>
+                                I have met with customer and had a direct conversation about their business.
+                            </p>
+                        </li>
+
+                    </ol>
+                </section>
+
+                <section class="skill">
+                    <h3 class="h3 skills-title">My skills</h3>
+
+                    <ul class="skills-list content-card">
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Laravel, php</h5>
+                                <data value="80">80%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 80%"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Html, Css , Js</h5>
+                                <data value="70">70%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 70%"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Sql, Mysql</h5>
+                                <data value="60">60%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 60%"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Reacjs + antd + tailwind css</h5>
+                                <data value="50">50%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 50%"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+
+            <!--
+        - #PORTFOLIO
+      -->
+
+            <article class="portfolio" data-page="portfolio">
+                <header>
+                    <h2 class="h2 article-title">Portfolio</h2>
+                </header>
+
+                <section class="projects">
+                    <ul class="filter-list">
+                        <li class="filter-item">
+                            <button class="active" data-filter-btn>All</button>
+                        </li>
+
+                        <li class="filter-item">
+                            <button data-filter-btn> Product</button>
+                        </li>
+
+                        <li class="filter-item">
+                            <button data-filter-btn>Applications</button>
+                        </li>
+
+                        <li class="filter-item">
+                            <button data-filter-btn>Form Login</button>
+                        </li>
+                    </ul>
+
+                    <div class="filter-select-box">
+                        <button class="filter-select" data-select>
+                            <div class="select-value" data-selecct-value>
+                                Select category
+                            </div>
+
+                            <div class="select-icon">
+                                <ion-icon name="chevron-down"></ion-icon>
+                            </div>
+                        </button>
+
+                        <ul class="select-list">
+                            <li class="select-item">
+                                <button data-select-item>All</button>
+                            </li>
+
+                            <li class="select-item">
+                                <button data-select-item>Product</button>
+                            </li>
+
+                            <li class="select-item">
+                                <button data-select-item>Applications</button>
+                            </li>
+
+                            <li class="select-item">
+                                <button data-select-item>Form Login</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <ul class="project-list">
+                        <li class="project-item active" data-filter-item data-category="applications">
+                            <a href="/TopBestAnimations/AnimatedEyes/index.html" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline">
+                                        </ion-icon>
+                                    </div>
+                                    <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy" />
+                                </figure>
+
+                                <h3 class="project-title">Animated Eye</h3>
+                                <p class="project-category">Web development</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="product">
+                            <a href="/TopBestAnimations/ButtonHover/index.html" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./assets/images/project-2.png" alt="orizon" loading="lazy" />
+                                </figure>
+
+                                <h3 class="project-title">Animation Hover Button</h3>
+
+                                <p class="project-category">Web development</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="product">
+                            <a href="/TopBestAnimations/CardHoverEffects/index.html"  target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy" />
+                                </figure>
+
+                                <h3 class="project-title">Card Hover</h3>
+
+                                <p class="project-category">Web design</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="product">
+                            <a href="/TopBestAnimations/ImageHoverEffect/index.html" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy" />
+                                </figure>
+
+                                <h3 class="project-title">Image Hover Effect</h3>
+
+                                <p class="project-category">Applications</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="web design">
+                            <a href="/TopBestAnimations/ImageHoverEffect/index1.html" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./assets/images/project-5.png" alt="dsm." loading="lazy" />
+                                </figure>
+
+                                <h3 class="project-title">Image Hover Hexagon</h3>
+
+                                <p class="project-category">Web design</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="product">
+                            <a href="/TopBestAnimations/ImageHoverEffect/index2.html" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy" />
+                                </figure>
+
+                                <h3 class="project-title">Image Hover Rectangle</h3>
+
+                                <p class="project-category">Web design</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="applications">
+                            <a href="/TopBestAnimations/SVGImageTransform/index.html" target="_blank"> 
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./assets/images/project-7.png" alt="summary" loading="lazy" />
+                                </figure>
+
+                                <h3 class="project-title">Scroll Video </h3>
+
+                                <p class="project-category">Web development</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="form login">
+                            <a href="/TopBestAnimations/LoginFormDesign/index.html" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy" />
+                                </figure>
+
+                                <h3 class="project-title">Login Form</h3>
+
+                                <p class="project-category">Applications</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="product">
+                            <a href="/TopBestAnimations/OurTeamSection/index.html" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./assets/images/project-9.png" alt="arrival" loading="lazy" />
+                                </figure>
+
+                                <h3 class="project-title">Our Team Hover</h3>
+
+                                <p class="project-category">Web development</p>
+                            </a>
+                        </li>
+                        <li class="project-item active" data-filter-item data-category="product">
+                            <a href="/TopBestAnimations/ProductCart/index.html" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./assets/images/project-10.jpg" alt="arrival" loading="lazy" />
+                                </figure>
+
+                                <h3 class="project-title">Animation Product</h3>
+
+                                <p class="project-category">Web development</p>
+                            </a>
+                        </li>
+                        <li class="project-item active" data-filter-item data-category="product">
+                            <a href="/TopBestAnimations/ProductsAnimation/index.html" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./assets/images/project-11.jpg" alt="arrival" loading="lazy" />
+                                </figure>
+
+                                <h3 class="project-title">Product Hover</h3>
+
+                                <p class="project-category">Web development</p>
+                            </a>
+                        </li>
+                        <li class="project-item active" data-filter-item data-category="web development">
+                            <a href="/TopBestAnimations/TextAndGradient/index.html" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="./assets/images/project-12.jpg" alt="arrival" loading="lazy" />
+                                </figure>
+
+                                <h3 class="project-title">Navigation Hover</h3>
+
+                                <p class="project-category">Web development</p>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+
+            <!--
+        - #BLOG
+      -->
+
+            <article class="blog" data-page="blog">
+                <header>
+                    <h2 class="h2 article-title">Blog</h2>
+                </header>
+
+                <section class="blog-posts">
+                    <ul class="blog-posts-list">
+                        <li class="blog-post-item" data-posts-items>
+                            <a href="#">
+                                <figure class="blog-banner-box">
+                                    <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022"
+                                        loading="lazy" />
+                                </figure>
+
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <p class="blog-category">Design</p>
+
+                                        <span class="dot"></span>
+
+                                        <time datetime="2022-02-23">Fab 23, 2022</time>
+                                    </div>
+
+                                    <h3 class="h3 blog-item-title">
+                                        Tổng hợp những câu hỏi phỏng vấn Front-end Dev
+                                    </h3>
+
+                                    <p class="blog-text">
+                                        Veritatis et quasi architecto beatae vitae dicta sunt,
+                                        explicabo.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="blog-post-item" data-posts-items>
+                            <a href="#">
+                                <figure class="blog-banner-box">
+                                    <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer"
+                                        loading="lazy" />
+                                </figure>
+
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <p class="blog-category">Question</p>
+
+                                        <span class="dot"></span>
+
+                                        <time datetime="2022-02-23">Fab 23, 2022</time>
+                                    </div>
+
+                                    <h3 class="h3 blog-item-title">
+                                        Tổng hợp những câu hỏi phỏng vấn Front-end Dev
+                                    </h3>
+
+                                    <p class="blog-text">
+                                        Sed ut perspiciatis, nam libero tempore, cum soluta nobis
+                                        est eligendi.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="blog-post-item" data-posts-items>
+                            <a href="#">
+                                <figure class="blog-banner-box">
+                                    <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy" />
+                                </figure>
+
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <p class="blog-category">Design</p>
+
+                                        <span class="dot"></span>
+
+                                        <time datetime="2022-02-23">Fab 23, 2022</time>
+                                    </div>
+
+                                    <h3 class="h3 blog-item-title">Cách tạo trang login sử dụng Laravel 10 </h3>
+
+                                    <p class="blog-text">
+                                        Excepteur sint occaecat cupidatat no proident, quis
+                                        nostrum exercitationem ullam corporis suscipit.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="blog-post-item" data-posts-items>
+                            <a href="#">
+                                <figure class="blog-banner-box">
+                                    <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week"
+                                        loading="lazy" />
+                                </figure>
+
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <p class="blog-category">Design</p>
+
+                                        <span class="dot"></span>
+
+                                        <time datetime="2022-02-23">Fab 23, 2022</time>
+                                    </div>
+
+                                    <h3 class="h3 blog-item-title">
+                                        Tạo trang đăng nhập, đăng ký trong android
+                                    </h3>
+
+                                    <p class="blog-text">
+                                        Enim ư minim veniam, consectetur adipiscing elit, quis
+                                        nostrud exercitation ullamco laboris nisi.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="blog-posts-detail" style="color: aliceblue;">
+                    <ion-icon name="arrow-back-outline" title="Tien" style="color: aliceblue;" class="icon_back"
+                        data-icon-back></ion-icon>
+                    <div class="posts-item-details" data-posts-items-details>
+                        <div class="posts-item-detail-header">
+                            <div class="h3 posts-item-detail-h3"> Những câu phỏng vấn Frontend</div>
+                            <div class="blog-meta">
+                                <p class="blog-category">Design</p>
+                                <span class="dot"></span>
+                                <time class="time" datetime="2022-02-23">Fab 23, 2022</time>
+                            </div>
+                        </div>
+                        <div class="posts-item-detail-content">
+                            <div style="padding-top: 10px; padding-bottom: 10px;">
+                                <h1> 1. Bản chất của <b style="color: rgb(38, 100, 246);">Responsive </b>là gì ? </h1>
+                                <h4>- Đó là :</h4>
+                            </div>
+
+                            <h1> 2. Có mấy cách khai báo CSS?</h1>
+                            <h4>- Đó là :</h4>
+                            <h1> 3. Hãy nêu độ ưu tiên trong CSS? </h1>
+                            <h4>- Đó là :</h4>
+                            <h1> 4. Sass với Less giống nhau và khách nhau ở điểm gì? </h1>
+                            <h4>- Đó là :</h4>
+                            <h1> 5. Phân biệt tải Async , Defer và tải thông thường trong tải javscript.</h1>
+                            <h4>- Đó là :</h4>
+                            <h1> 6. Phân biệt ReactJS và Angular và khi nào nên dùng cái nào? </h1>
+                            <h4>- Đó là :</h4>
+                            <h1>7. Scope trong javscript là gì, có bao nhiêu loại?</h1>
+                            <h4>đó là</h4>
+                            <h1>8. Phân biệt call, apply , bind ,cách dùng</h1>
+                            <h4>Đó là</h4>
+                            <h1>9. Namespace trong javascript là gì </h1>
+                        </div>
+                    </div>
+                    <div class="posts-item-details" data-posts-items-details>
+                        <div class="posts-item-detail-header">
+                            <div class="h3 posts-item-detail-h3"> Những câu phỏng vấn Backend</div>
+                            <div class="blog-meta">
+                                <p class="blog-category">Design</p>
+                                <span class="dot"></span>
+                                <time class="time" datetime="2022-02-23">Fab 23, 2022</time>
+                            </div>
+                        </div>
+                        <div class="posts-item-detail-content">
+                            <h1> hay qua </h1>
+                        </div>
+                    </div>
+                    <div class="posts-item-details" data-posts-items-details>
+                        <div class="posts-item-detail-header">
+                            <div class="h3 posts-item-detail-h3"> new POST 3</div>
+                            <div class="blog-meta">
+                                <p class="blog-category">Design</p>
+                                <span class="dot"></span>
+                                <time class="time" datetime="2022-02-23">Fab 23, 2022</time>
+                            </div>
+                        </div>
+                        <div class="posts-item-detail-content">
+                            <h1> hay qua </h1>
+                        </div>
+                    </div>
+                    <div class="posts-item-details" data-posts-items-details>
+                        <div class="posts-item-detail-header">
+                            <div class="h3 posts-item-detail-h3"> new POST 4</div>
+                            <div class="blog-meta">
+                                <p class="blog-category">Design</p>
+                                <span class="dot"></span>
+                                <time class="time" datetime="2022-02-23">Fab 23, 2022</time>
+                            </div>
+                        </div>
+                        <div class="posts-item-detail-content">
+                            <h1> hay qua </h1>
+                        </div>
+                    </div>
+
+                </section>
+            </article>
+
+            <!--
+        - #CONTACT
+      -->
+
+            <article class="contact" data-page="contact">
+                <header>
+                    <h2 class="h2 article-title">Contact</h2>
+                </header>
+
+                <section class="mapbox" data-mapbox>
+                    <figure>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d806.3648231296336!2d108.25323871374837!3d15.974993403258772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142108997dc971f%3A0x1295cb3d313469c9!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgVGjDtG5nIHRpbiB2w6AgVHJ1eeG7gW4gdGjDtG5nIFZp4buHdCAtIEjDoG4!5e0!3m2!1svi!2s!4v1681137917335!5m2!1svi!2s"
+                            width="400" height="300" loading="lazy"></iframe>
+                    </figure>
+                </section>
+
+                <section class="contact-form">
+                    <h3 class="h3 form-title">Contact Form</h3>
+
+                    <form action="#" method="post" class="form" data-form>
+                        <div class="input-wrapper">
+                            <input type="text" name="fullname" class="form-input" placeholder="Full name" required
+                                data-form-input />
+
+                            <input type="email" name="email" class="form-input" placeholder="Email address" required
+                                data-form-input />
+                        </div>
+
+                        <textarea name="message" class="form-input" placeholder="Your Message" required
+                            data-form-input></textarea>
+
+                        <button onclick="sendEmail()" class="form-btn  send-mail " type="submit" data-form-btn name="send" id="send-mail">
+                            <ion-icon name="paper-plane"></ion-icon>
+                            <span>Send Message</span>
+                        </button>
+                    </form>
+                </section>
+            </article>
+        </div>
+    </main>
+
+
+    <script src="./assets/js/script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
